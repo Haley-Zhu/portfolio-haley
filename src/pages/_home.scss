@@ -1,0 +1,14 @@
+.home {
+  &-container {
+    width: 100vw;
+    height: 100vh;
+    // background-image: url('../assets/Nature.jpg');
+    background-size: 100%;
+    // background-color: rgba(0, 0, 0, 0.5);
+  }
+  &__name {
+    text-align: center;
+    color: $primary-yellow;
+    font-size: 30px;
+  }
+}

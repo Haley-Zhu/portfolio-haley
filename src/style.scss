@@ -1,0 +1,12 @@
+$primary-yellow: #ebc756;
+$back-color: #443b3c;
+$white: #ffffff;
+
+body {
+  background-color: $back-color;
+  color: $white;
+}
+
+@import './layout/header';
+@import './pages/home';
+@import './pages/projects';

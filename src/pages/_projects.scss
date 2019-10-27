@@ -1,0 +1,15 @@
+.project {
+  &__item {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    // justify-content: center;
+    img {
+      width: 400px;
+      height: 350px;
+    }
+  }
+  &__discription {
+    color: $white;
+  }
+}
