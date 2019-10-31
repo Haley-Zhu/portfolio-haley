@@ -2,9 +2,24 @@
   &-container {
     width: 100vw;
     height: 100vh;
-    // background-image: url('../assets/Nature.jpg');
-    background-size: 100%;
-    // background-color: rgba(0, 0, 0, 0.5);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url("../assets/slide2.jpg") 0 0 no-repeat;
+    background-size: cover;
+    -webkit-transform: translate3d(0,0,0);
+  }
+  &__icon-container {
+    display: inline-block;
+  //   a:before {
+  //     display: inline-block;
+  //   }
+  // }
+  // &__icon:before {
+  //   font-family: "Font Awesome 5 Free";
+  //   width: 40px;
+  //   height: 40px;
+  //   content: "\f199";
+    // filter: drop-shadow(#ffffff 80px 0);
+    // background-color: $primary-white;
+    // color: $primary-white;
   }
   &__name {
     text-align: center;

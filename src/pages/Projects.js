@@ -5,7 +5,7 @@ import { Carousel } from 'react-bootstrap';
 class Projects extends React.Component {
   render() {
     return (
-      <div>
+      <div id="projects">
         <Carousel className="project-container">
           {projects.map(item => {
             return (

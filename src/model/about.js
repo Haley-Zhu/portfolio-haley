@@ -1,7 +1,8 @@
 const about = [
-  "Project Management: Jira, bitbucket",
-  "Front-end development: CSS3, Sass, Pug(Jade), JavaScript ES6, React.js, Redux, Bootstrap, jQuery, Responsive design",
-  "Back-end development: Node.js, MongoDB, KeystoneJs, Mongoose, RESTful API"
+  "Having experience in projects with a reusable, testable, maintainable code.",
+  "A self-motivated, passionate team player.",
+  "A critical thinker and a fast learner with problem-solving skills.",
+  "Willing to take responsibility."
 ];
 
 export default about;

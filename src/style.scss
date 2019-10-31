@@ -1,10 +1,11 @@
 $primary-yellow: #ebc756;
-$back-color: #443b3c;
-$white: #ffffff;
+$back-color: #242424;
+$primary-white: #ffffff;
 
 body {
   background-color: $back-color;
-  color: $white;
+  font-family: "Consolas", sans-serif;
+  color: $primary-white;
 }
 
 @import './layout/header';

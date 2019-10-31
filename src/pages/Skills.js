@@ -4,7 +4,7 @@ import skills from '../model/skills';
 class Skills extends React.Component {
   render() {
     return(
-      <div>
+      <div id="skills">
         <p>skills</p>
         <ul>
           {skills.map(item => 

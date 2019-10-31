@@ -4,7 +4,7 @@ import about from '../model/about';
 class About extends React.Component {
   render() {
     return(
-      <div>
+      <div id="about">
         <p>About</p>
         <ul>
           {about.map(item => 
