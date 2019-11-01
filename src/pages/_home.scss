@@ -2,28 +2,51 @@
   &-container {
     width: 100vw;
     height: 100vh;
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url("../assets/slide2.jpg") 0 0 no-repeat;
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url("../assets/home_bg.jpg") 0 0 no-repeat;
     background-size: cover;
+    transform: translate3d(0,0,0);
     -webkit-transform: translate3d(0,0,0);
   }
-  &__icon-container {
-    display: inline-block;
-  //   a:before {
-  //     display: inline-block;
-  //   }
-  // }
-  // &__icon:before {
-  //   font-family: "Font Awesome 5 Free";
-  //   width: 40px;
-  //   height: 40px;
-  //   content: "\f199";
-    // filter: drop-shadow(#ffffff 80px 0);
-    // background-color: $primary-white;
-    // color: $primary-white;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 10rem;
+  }
+  &__welcome {
+    font-size: 1.2rem;
+    margin: 1rem 0 -1rem 0;
+    // flex: 1;
   }
   &__name {
-    text-align: center;
     color: $primary-yellow;
-    font-size: 30px;
+    font-size: 7rem;
+    // flex: 1;
+  }
+  &__major {
+    // color: $primary-yellow;
+    margin-top: -2.5rem;
+    font-size: 1.5rem;
+    // flex: 1;
+  }
+  &__icons {
+    margin-top: 2rem;
+    // flex: 1;
+    display: flex;
+    justify-content:center;
+    >:nth-child(n) {
+      margin: 0 20px;
+      color: $primary-white;
+      &:hover {
+        & path {
+          fill: $primary-yellow;
+        }
+      }
+    }
+  }
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }

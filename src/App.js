@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './layout/Header';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -11,7 +12,7 @@ import './style.scss';
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
       <body>
         <Home />
@@ -20,7 +21,7 @@ function App() {
         <Skills />
         <Contact />
       </body>
-    </div>
+    </Router>
   );
 }
 
