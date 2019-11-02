@@ -1,5 +1,5 @@
 $primary-yellow: #ebc756;
-$back-color: #242424;
+$back-color: #030303c7;
 $primary-white: #ffffff;
 
 body {
@@ -8,6 +8,11 @@ body {
   color: $primary-white;
 }
 
+// components
+@import './components/subtitle';
+// layout
 @import './layout/header';
+// page
 @import './pages/home';
+@import './pages/about';
 @import './pages/projects';
