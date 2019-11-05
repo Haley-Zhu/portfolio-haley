@@ -1,0 +1,106 @@
+.contact {
+  &-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    display: flex;
+  }
+  &--left {
+    width: 50%;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    & Button {
+      width: 100%;
+      margin-top: 1rem;
+      height: 3rem;
+      border: 0;
+      font-size: 1.5rem;
+      color: $primary-white;
+      background-color: $primary-yellow;
+      &:hover {
+        opacity: 0.9;
+        color: $primary-white;
+        background-color: $primary-yellow;
+      }
+      &:focus {
+        background-color: $primary-yellow;
+        box-shadow: 0 0 0 0.2rem $primary-yellow-shadow;
+      }
+      &:active {
+        background-color: $primary-yellow;
+      }
+    }
+  }
+  &__item {
+    height: 3rem;
+    display: flex;
+    margin-top: 1rem;
+    & textarea {
+      resize: none;
+    }
+    & input, & textarea {
+      flex: 4;
+      padding-left: 0.5rem;
+    }
+    &--large {
+      height: 8rem;
+    }
+  }
+  &__icon-wrap {
+    flex: 1;
+    background-color: $primary-yellow;
+    position:relative;
+  }
+  &__icon {
+    width: 28%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    // & path {
+      // fill: $primary-yellow;
+    // }
+  }
+  &--right {
+    width: 50%;
+    padding: 1rem 0 0 10rem;
+  }
+  &__subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  &__info {
+    margin-bottom: 2rem;
+    &__item {
+      display: flex;
+      height: 2rem;
+      line-height: 2rem;
+      margin-left: 0.6rem;
+      margin-top: 0.4rem;
+    }
+    &__icon {
+      width: 3%;
+      margin-right: 1rem;
+    }
+  }
+  &__follow {
+    &__icons {
+    // flex: 1;
+    display: flex;
+    >:nth-child(n) {
+      margin: 0 0.5rem;
+      color: $primary-white;
+      &:hover {
+        & path {
+          fill: $primary-yellow;
+        }
+      }
+    }
+    }
+    &__icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}

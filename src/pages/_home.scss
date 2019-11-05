@@ -8,6 +8,7 @@
     -webkit-transform: translate3d(0,0,0);
   }
   &__content {
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -20,7 +21,7 @@
     // flex: 1;
   }
   &__name {
-    color: $primary-yellow;
+    color: $primary-white;
     font-size: 7rem;
     // flex: 1;
   }
@@ -48,5 +49,24 @@
   &__icon {
     width: 2.5rem;
     height: 2.5rem;
+  }
+  &__download {
+    width: 10rem;
+    margin: 0 auto;
+    border: 0;
+    color: $primary-white;
+    background-color: $primary-yellow;
+    &:hover {
+      opacity: 0.9;
+      color: $primary-white;
+      background-color: $primary-yellow;
+    }
+    &:focus {
+      background-color: $primary-yellow;
+      box-shadow: 0 0 0 0.2rem $primary-yellow-shadow;
+    }
+    &:active {
+      background-color: $primary-yellow;
+    }
   }
 }

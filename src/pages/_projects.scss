@@ -1,7 +1,7 @@
-.project {
-  &__content {
-    width: 80%;
-    
+.projects {
+  &-container {
+    width: 90%;
+    margin: 0 auto;
   }
   &__item {
     display: flex;
@@ -15,5 +15,79 @@
   }
   &__discription {
     color: $primary-white;
+  }
+}
+
+.project {
+  &-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  &__item {
+    display: flex;
+    margin-top: 5rem;
+    & .img-container {
+      position: relative;
+      &:hover {
+        // cursor: pointer;
+        & img {
+          opacity: 0.6;
+        }
+        & .img__overlay {
+          background-color: $primary-yellow-overlay;
+          & .view {
+            &__icons {
+              >:nth-child(n) {
+                background-color: $primary-white;
+                & path {
+                  fill: $primary-yellow;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    & img {
+      width: 450px;
+      height: 300px;
+      border-radius: 10px;
+      backface-visibility: hidden;
+    }
+    & .img__overlay {
+      background-color: $opacity-zero;
+      width: 450px;
+      height: 300px;
+      position: absolute;
+      border-radius: 10px;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      & .view {
+        &__icons {
+          display: flex;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          >:nth-child(n) {
+            margin: 0 0.5rem;
+            color: $opacity-zero;
+            border-radius: 50%;
+            padding: 1rem;
+          }
+        }
+        &__icon {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+    }
+  }
+  &__discription {
+    margin-left: 2rem;
   }
 }

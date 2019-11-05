@@ -1,8 +1,11 @@
 import demo from '../assets/demo.jpg';
+import JRHome from '../assets/learn.jiangren.com.au.home.png';
+import JRWeb from '../assets/jiangren.com.au.png';
 const projects = [
   {
-    name: "demo1",
-    image: demo,
+    name: "JRHome",
+    image: JRHome,
+    link: "",
     discriptions: [
       "Project Management: Jira, bitbucket",
       "Front-end development: CSS3, Sass, Pug(Jade), JavaScript ES6, React.js, Redux, Bootstrap, jQuery, Responsive design",
@@ -10,8 +13,8 @@ const projects = [
     ]
   },
   {
-    name: "demo2",
-    image: demo,
+    name: "JRWeb",
+    image: JRWeb,
     discriptions: [
       "Project Management: Jira, bitbucket",
       "Front-end development: CSS3, Sass, Pug(Jade), JavaScript ES6, React.js, Redux, Bootstrap, jQuery, Responsive design",
