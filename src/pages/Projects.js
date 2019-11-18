@@ -46,9 +46,11 @@ class Projects extends React.Component {
                   </div>
                 </div>
                 <div className="project__discription">
+                  <div className="project__discription__title">{item.name}</div>
                   {item.discriptions.map(discription =>
                     <p>{discription}</p>
-                  )}</div>
+                  )}
+                </div>
               </div>
             );
           })}

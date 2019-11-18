@@ -89,5 +89,10 @@
   }
   &__discription {
     margin-left: 2rem;
+    &__title {
+      color: $primary-yellow;
+      font-size: 25px;
+      margin-bottom: 1rem;
+    }
   }
 }

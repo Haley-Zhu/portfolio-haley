@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 import { ReactComponent as Github } from '../assets/github-square-brands.svg';
 import { ReactComponent as Linkdin } from '../assets/linkedin-brands.svg';
 import { ReactComponent as Email } from '../assets/envelope-square-solid.svg';
+import Resume from '../assets/resume/Resume_Web_Haley.pdf';
 import personalDetail from '../model/personalDetail';
 
 class Home extends React.Component {
@@ -13,7 +14,7 @@ class Home extends React.Component {
           <div className="home__content">
             <p className="home__welcome">Hello, I am</p>
             <p className="home__name">{personalDetail.name}</p>
-            <p className="home__major">Full-Stack Developer</p>
+            <p className="home__major">Full-Stack | Front-End Developer</p>
             {/* <div className="home__icons">
               <a href="https://github.com/Haley-Zhu" target="_blank" rel="noopener noreferrer">
                 <Github className="home__icon" alt="github" />
@@ -25,7 +26,9 @@ class Home extends React.Component {
                 <Email className="home__icon" alt="email" />
               </a>
             </div> */}
-            <Button className="home__download" variant="yellow">View Resume</Button>
+            <a href={Resume}>
+              <Button className="home__download" variant="yellow" >View Resume</Button>
+            </a>
           </div>
         </div>
       </div>
