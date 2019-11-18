@@ -36,12 +36,12 @@ class Projects extends React.Component {
                   <img src={item.image} alt={item.name} />
                   <div class="img__overlay">
                     <div className="view__icons">
-                      <a href="#" target="_blank" rel="noopener noreferrer">
+                      <a href={item.link} target="_blank" rel="noopener noreferrer">
                         <LinkIcon className="view__icon" alt="github" />
                       </a>
-                      <a href="#" target="_blank" rel="noopener noreferrer">
+                      {/* <a href="#" target="_blank" rel="noopener noreferrer" disable>
                         <Code className="view__icon" alt="github" />
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
