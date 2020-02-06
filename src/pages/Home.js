@@ -14,7 +14,7 @@ class Home extends React.Component {
           <div className="home__content">
             <p className="home__welcome">Hello, I am</p>
             <p className="home__name">{personalDetail.name}</p>
-            <p className="home__major">Full-Stack | Front-End Developer</p>
+            <p className="home__major">Front-End | Full-Stack Developer</p>
             {/* <div className="home__icons">
               <a href="https://github.com/Haley-Zhu" target="_blank" rel="noopener noreferrer">
                 <Github className="home__icon" alt="github" />
